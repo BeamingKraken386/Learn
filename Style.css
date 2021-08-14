@@ -1,6 +1,6 @@
-html {
-    width: 100%;
-    height: fit-content;
+/* Introduction*/
+body {
+    overflow-x: hidden;
 }
 header {
     background-color: rgba(24, 24, 24, 0.322);
@@ -23,17 +23,29 @@ footer {
     height: 20px;
     padding-bottom: 15px;
 }
-.container {
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    width: auto;
+    height: 100px;
+    background: linear-gradient(to top,rgb(73, 30, 19),transparent);
+    z-index: 1000;
+}    
+.gh {
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
 }
-body {
+.container {
     background-color: rgb(64, 75, 75);
     background-image: url(/Photos/2021-05-29\ \(5\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    max-height: none;
+    width: 100%;
+    
 }   
 h1 {
     text-align: center;
@@ -60,10 +72,38 @@ header a {
 footer p {
     text-align: center;
     font-size: 15px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 section {
   padding-bottom: 1px;
   padding-top: 20px;
   text-align: center;
 } 
+main a {
+    font-size: 25px;
+}
+/* continue*/
+.n2 {
+    padding-left: 240px;
+    padding-right: 240px;
+    height: 550px;
+    background-color: rgba(27, 9, 5, 0.925);
+    display: flex;
+}    
+.p1 { 
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.k1 {
+    align-items: center;
+    background-color: #4285f4;
+    border-radius:0px 50px 50px 0px;
+    color: #1967d2;
+    display: flex;
+    font-family: Google Sans;
+    font-size: 0px;
+    font-weight: 50;
+    justify-content: flex-start;
+    line-height: 0px;
+    padding: 0px 0px 0px 8px;
+}
